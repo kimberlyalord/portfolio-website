@@ -1,0 +1,25 @@
+html {
+  --header-background: black;
+  --header-text: white;
+  --body-background: pink;
+  --main-text: blue;
+  --card-background: red;
+}
+
+body {
+  background-color: var(--body-background);
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Recursive', sans-serif;
+}
+
+.title {
+  font-family: 'Parisienne', cursive;
+}
+
+img {
+  border: 5px solid black;
+  border-radius: 500px;
+}
