@@ -1,9 +1,15 @@
 html {
-  --header-background: black;
-  --header-text: white;
-  --body-background: pink;
-  --main-text: blue;
-  --card-background: red;
+  --header-background: #6E495B;
+  --header-text: #E6DBE0;
+  --body-background: #C6A9B7;
+  --main-text: #F7F3F5;
+  --card-background: #9D6C84;
+}
+
+header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+
 }
 
 body {
@@ -17,9 +23,22 @@ body {
 
 .title {
   font-family: 'Parisienne', cursive;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px black;
+  padding: 30px 30px;
 }
 
 img {
   border: 5px solid black;
-  border-radius: 500px;
+  border-radius: 200px;
+  height: 200px;
+}
+
+.about-me {
+  padding: 20px 200px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-text);
 }
