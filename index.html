@@ -37,12 +37,46 @@
       <a href="https://cookiecompiler.herokuapp.com/">Link to Deployed App</a>
     </div>
   </div>
+  <div class="card">
+    <div class="card-header">Chinchilla Collector</div>
+    <div class="card-body">
+      <img src="https://i.imgur.com/3LNU1Xf.png" alt="screenshot">
+      <p>"Chinchilla Collector" was created using Python, Django, PostgreSQL, AWS, HTML, CSS, and Javascript. The app allows a user to create a collection of virtual chinchillas, update or delete them, add feedings and baths to a chinchilla, and add and remove toys.</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://github.com/kimberlyalord/chinchilla_collector">Link to GitHub Repo</a>
+      <a href="http://chinchilla-collector.herokuapp.com/">Link to Deployed App</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">GASapp</div>
+    <div class="card-body">
+      <img src="https://i.imgur.com/baBKk86.png" alt="screenshot">
+      <p>"GASapp" was a group project with fellow GA alums <a href="https://traviscashion.com/">Travis Cashion</a> and <a href="http://github.com/chris-violante">Chris Violante</a>. The app was created using Python, Django, PostgreSQL, AWS, HTML, CSS, and JavaScript, and it consumes the third-party API offered by <a href="https://www.reverb-api.com/">Reverb.com</a>. GASapp is designed to be a singular, intuitive site for musicians who suffer from "Gear Acquistion Syndrome" to keep track of and valuate their music gear, and also to maintain a wishlist and connect them with links to online listings for gear they don't own <i>yet</i>.</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://github.com/kimberlyalord/GASapp">Link to GitHub Repo</a>
+      <a href="https://gear-acquisition-syndrome.herokuapp.com/">Link to Deployed App</a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">Learmember</div>
+    <div class="card-body">
+      <img src="https://i.imgur.com/ovXx66O.png" alt="screenshot">
+      <p>"Learmember" is a portmanteau of "learn" and "remember." This full-stack app is designed to be  a place where you can keep track of things that you want to learn. Users can add, update, and delete learning topics, associate learning resources with their topics, and filter lists by whether they have already learned the topic or not. Learmember was react as a single-page application using React, MongoDB, Express, Node.js, Javascript, CSS, and HTML.</p>
+    </div>
+    <div class="card-footer">
+      <a href="https://github.com/kimberlyalord/Learmember">Link to GitHub Repo</a>
+      <a href="https://learmember.herokuapp.com/">Link to Deployed App</a>
+    </div>
+  </div>
 </body>
 </html>
 
 <script>
   function wakeUpHeroku() {
     fetch('https://cookiecompiler.herokuapp.com', {mode: 'no-cors'});
+    fetch('http://chinchilla-collector.herokuapp.com/', {mode: 'no-cors'});
     fetch('https://gear-acquisition-syndrome.herokuapp.com', {mode: 'no-cors'});
     fetch('https://learmember.herokuapp.com', {mode: 'no-cors'});
   }
