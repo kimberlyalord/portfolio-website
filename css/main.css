@@ -9,6 +9,8 @@ html {
 header {
   background-color: var(--header-background);
   color: var(--header-text);
+  width: 100%;
+  display: grid;
   margin: 0 auto 30px 0;
   border: solid 1px black;
   box-shadow: var(--header-background) 1px 1px 5px;
@@ -16,7 +18,7 @@ header {
 
 .title {
   font-family: 'Parisienne', cursive;
-  font-size: 50px;
+  font-size: 8vmin;
   text-shadow: 2px 2px 2px black;
   padding: 20px 20px;
 }
@@ -28,16 +30,19 @@ header {
 }
 
 .about-me {
-  padding: 20px 300px;
+  width: 80%;
+  margin: 15px auto;
 }
 
 a {
   text-decoration: none;
-  color: var(--header-text);
+  color: var(--main-text);
+  padding: 5px 0;
 }
 
 a:hover {
   color: white;
+  background-color: #5B3749;
 }
 
 body {
@@ -47,14 +52,14 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  font-family: 'Recursive', sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .card {
   background-color: var(--card-background);
   width: 40%;
   border: solid 1px black;
-  margin: 0 auto 30px auto;
+  margin: 15px auto 15px auto;
   box-shadow: var(--header-background) 1px 1px 6px;
   overflow-wrap: anywhere;
 }
@@ -62,6 +67,7 @@ body {
 img {
   height: 600px;
   border: solid 1px black;
+  margin: 15px auto 0 auto;
 }
 
 p {
@@ -76,13 +82,73 @@ p {
 
 .card-footer {
   margin-bottom: 0;
-  padding: 5px 0;
 }
 
 .card-header {
-  font-family: 'Parisienne', cursive;
-  font-size: 4vmin;
+  font-family: 'Damion', cursive;
+  color: var(--main-text);
+  font-size: 5vmin;
+  font-weight: bold;
   text-shadow: 1px 2px 2px black;
-  /* height: 6.5vmin; */
   padding: 8px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    width: 100vw;
+    display: grid;
+    margin: 0 0;
+  }
+  
+  .card {
+    align-items: center;
+    width: 80%;
+  }
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+    display: grid;
+    margin: 0 0;
+  }
+  
+  .card {
+    align-items: center;
+    width: 90%;
+  }
+  
+  .photo {
+    max-height: 100px;
+    border: 2px solid black;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 75%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    width: 100vw;
+    display: grid;
+    margin: 0 0;
+  }
+
+  .card {
+    align-items: center;
+    width: 90%;
+  }
+
+  img {
+    max-width: 75%;
+    height: auto;
+  }
 }
